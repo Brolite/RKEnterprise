@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "About Us";
+}
+<h2 id="title">@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+    <style>
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .section-content {
+            margin-bottom: 40px;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .validation-message {
+            color: red;
+            font-size: 0.875rem;
+        }
+    </style>
+
+<body>
+    <div class="container">      
+
+        <!-- Section 1: Our Story -->
+        <section id="our-story" class="section-content">
+            <p class="section-title" style="font-size:27px">Our Story</p>
+            <p>Founded in 2024, RK Enterprise began with a vision to deliver top-notch contracting services to the Medinipur area. With a commitment to quality and customer satisfaction, we've grown from a small startup to a trusted name in the industry. Our journey has been marked by dedication, hard work, and a passion for excellence.</p>
+        </section>
+
+        <!-- Section 2: Our Mission & Values -->
+        <section id="mission-values" class="section-content">
+            <h2 class="section-title">Our Mission & Values</h2>
+            <p><strong>Our Mission:</strong> Our mission is to provide exceptional contracting services that exceed our clients' expectations. We strive to deliver high-quality workmanship, on-time project completion, and transparent communication.</p>
+            <p><strong>Our Values:</strong></p>
+            <ul>
+                <li><strong>Integrity:</strong> We uphold the highest standards of honesty and transparency.</li>
+                <li><strong>Quality:</strong> We are committed to delivering superior craftsmanship and using only the best materials.</li>
+                <li><strong>Customer Focus:</strong> Our clients' needs and satisfaction are our top priority.</li>
+                <li><strong>Innovation:</strong> We embrace new technologies and methods to improve our services.</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Meet the Team -->
+        <section id="meet-the-team" class="section-content">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="row">
+                <div class="col-md-4 team-member">
+                    <img src="path/to/john-doe.jpg" alt="John Doe">
+                    <h4>Samrat Chakroborty – Founder & CEO</h4>
+                    <p>With over 20 years of experience in the contracting industry, Samrat leads our team with a wealth of knowledge and a passion for excellence. He oversees all projects to ensure they meet our high standards.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="path/to/jane-smith.jpg" alt="Jane Smith">
+                    <h4>Samrat Chakroborty – Project Manager</h4>
+                    <p>Samrat brings her expertise in project management to ensure that every job is completed on time and within budget. Her attention to detail and organizational skills are key to our success.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="path/to/mike-johnson.jpg" alt="Mike Johnson">
+                    <h4>Saheb Chakroborty – Lead Contractor</h4>
+                    <p>Saheb is a skilled craftsman with a keen eye for quality. His hands-on approach and dedication to his work ensure that every project is completed to the highest standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Why Choose Us -->
+        <section id="why-choose-us" class="section-content">
+            <h2 class="section-title">Why Choose Us</h2>
+            <ul>
+                <li><strong>Experienced Professionals:</strong> Our team consists of skilled professionals with extensive industry experience.</li>
+                <li><strong>Comprehensive Services:</strong> From residential to commercial projects, we offer a wide range of services tailored to your needs.</li>
+                <li><strong>Customer-Centric Approach:</strong> We listen to your needs and work closely with you to bring your vision to life.</li>
+                <li><strong>High-Quality Standards:</strong> We use the best materials and practices to ensure lasting results.</li>
+            </ul>
+        </section>
+
+        <!-- Section 5: Our Achievements -->
+        <section id="achievements" class="section-content">
+            <h2 class="section-title">Our Achievements</h2>
+            <p>We are proud of our achievements and the recognition we have received in the industry:</p>
+            <ul>
+                <li>Award for Best Residential Contractor 2024</li>
+                <li>Certified Green Builder</li>
+                <li>Featured in ABP News for Innovative Design Solutions</li>
+            </ul>
+        </section>
+
+        <!-- Section 6: Get in Touch -->
+        <section id="get-in-touch" class="section-content">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Want to learn more about our services or discuss your next project? Contact us today!</p>
+            <ul>
+                <li><strong>Phone:</strong> 7001775393</li>
+                <li><strong>Email:</strong> <a href="mailto:justiceforall1897@gmail.com">justiceforall1897@gmail.com</a></li>
+                <li><strong>Address:</strong> Kharagpur, WestBengal</li>
+            </ul>
+            <p><a href="~/Home/Career" class="btn btn-primary">Contact Form</a></p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>

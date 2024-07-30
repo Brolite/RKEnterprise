@@ -1,0 +1,43 @@
+﻿@model RKEnterprise.Models.CareerModel
+
+@{
+    ViewBag.Title = "Career";
+}
+
+<h2>Career</h2>
+
+@using (Html.BeginForm("Career", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @id = "Name" })
+        @Html.ValidationMessageFor(m => m.Name, null, new { @class = "validation-message" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "Email" })
+        @Html.ValidationMessageFor(m => m.Email, null, new { @class = "validation-message" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber)
+        @*@Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })*@
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", @id = "PhoneNumber", pattern = @"^(?:\+91|91)?[789]\d{9}$" })
+        @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "validation-message" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Message)
+        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @id = "Message" })
+        @Html.ValidationMessageFor(m => m.Message, null, new { @class = "validation-message" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.CV)
+        <input type="file" name="CV" id="CV" class="form-control" />
+        @Html.ValidationMessageFor(m => m.CV, null, new { @class = "validation-message" })
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+
+@section scripts {
+    <script src="~/Scripts/validation.js"></script>
+}
